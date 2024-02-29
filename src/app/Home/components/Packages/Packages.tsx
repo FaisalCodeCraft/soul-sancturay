@@ -21,7 +21,7 @@ import React from "react";
 
 const Packages = () => {
   return (
-    <Box py={{ md: 10 }} bgcolor={COLOR.gray.light}>
+    <Box py={{ md: 10,sm:6,xs:6 }} bgcolor={COLOR.gray.light}>
       <Container maxWidth="lg">
         {/* <Box position={"absolute"} right={0} top={0} width={"300px"} zIndex={-1}>
         <img
@@ -33,7 +33,7 @@ const Packages = () => {
       </Box> */}
         <Typography fontSize={"2.2rem"} fontWeight={500} textAlign={"center"}>
           Packages
-          <Grid container spacing={6} px={3}>
+          <Grid container spacing={{md:6}} px={{md:3}}>
             {PACKAGES.map((feature, i) => (
               <Grid item md={4} mt={5} key={i}>
                 <Box

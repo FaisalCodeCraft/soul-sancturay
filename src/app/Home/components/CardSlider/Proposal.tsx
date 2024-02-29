@@ -20,8 +20,8 @@ const useStyles: any = makeStyles((theme: Theme) => ({
     },
     "& li": {
       "& button::before": {
-        fontSize: theme.typography.pxToRem(14),
-        color: "#fff",
+        fontSize: theme.typography.pxToRem(12),
+        color: COLOR.gray.dark,
         opacity: 1,
       },
     },
@@ -44,35 +44,65 @@ const Proposal = () => {
     scroll: "none",
     arrows: false,
     dotsClass: `slick-dots ${classes.dots}`,
-    width: "100px",
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          speed: 500,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 500,
+          dots: true,
+
+        },
+      },
+    ],
   };
 
   return (
     <Box
       position={"relative"}
-      height={"50vh"}
       bgcolor={COLOR.gray.light}
+      height={{md:"50vh",xs:"35vh"}}
       px={5}
       textAlign={"center"}
+      my={{xs:4}}
     >
-      <Box position={"absolute"} width={"50vh"}>
+      <Box position={"absolute"} width={{md:"300px"}} height={{md:"280px",xs:"150px"}} left={-80}>
         <Image
-          width={250}
-          height={250}
-          style={{ opacity: 0.3,objectFit:"contain" }}
+          fill
+          style={{ opacity: 0.3, objectFit: "contain" }}
           src="https://wedding-wonders.bugfinder.net/assets/uploads/content/633292302011f1664258608.png"
           alt=""
         />
       </Box>
       <Slider {...settings}>
         {MARRIAGE_PROPOSALS.map((category, i) => (
-          <Box key={i} mt={5} p={2}>
+          <Box key={i} mt={{md:5,sm:3,xs:1}} p={{md:2}}>
             <Typography
               sx={{
                 fontWeight: "lighter",
                 fontFamily: "monospace",
                 color: "red",
-                marginBottom: "15px",
+                marginBottom: {md:"15px"},
               }}
             >
               {category?.title}
@@ -88,7 +118,7 @@ const Proposal = () => {
               {MARRIAGE_PROPOSALS[i].BY_CATEGORY?.map((item, i) => (
                 <Typography
                   sx={{
-                    mb: 1,
+                    mb: {md:1},
                     ":last-child": {
                       borderRight: "none",
                     },
@@ -126,7 +156,7 @@ const Proposal = () => {
             </Box>
           </Box>
         ))}
-        <Box mt={5} p={2}>
+        <Box mt={{md:5}} p={2}>
           <Typography
             sx={{
               fontWeight: "lighter",
@@ -137,22 +167,22 @@ const Proposal = () => {
           >
             Best Matches
           </Typography>
-          <Typography >
+          <Typography>
             <People
               sx={{
                 fontSize: "4em",
                 bgcolor: COLOR.main.electricblue,
                 borderRadius: "50%",
-                p:.7,
-                width:"60px",
-                height:"60px",
-                border:`5px solid ${COLOR.gray.light}`,
-                boxShadow:`0 0 0 1.5px ${COLOR.main.electricblue}`
+                p: 0.7,
+                width: "60px",
+                height: "60px",
+                border: `5px solid ${COLOR.gray.light}`,
+                boxShadow: `0 0 0 1.5px ${COLOR.main.electricblue}`,
               }}
             />
           </Typography>
         </Box>
-        <Box mt={5} p={2}>
+        <Box mt={{md:5}} p={2}>
           <Typography
             sx={{
               fontWeight: "lighter",

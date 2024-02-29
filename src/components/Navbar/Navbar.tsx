@@ -25,7 +25,6 @@ const Navbar = () => {
   const [navShadow, setNavShadow] = React.useState(false);
   const [color, setColor] = React.useState(false);
 
-
   const changeBgColor = () => {
     if (window.scrollY >= 5) {
       setNavShadow(true);
@@ -35,11 +34,11 @@ const Navbar = () => {
       setColor(false);
     }
   };
-  
-  if (typeof window !== 'undefined') {
+
+  if (typeof window !== "undefined") {
     window.addEventListener("scroll", changeBgColor);
   }
- 
+
   const pathname = usePathname();
 
   const handleDrawerToggle = () => setMobileOpen((prevState) => !prevState);
@@ -53,49 +52,94 @@ const Navbar = () => {
     >
       <List>
         <ListItem>
-          <Link href="/Home" style={{ color: "black", textDecoration: "none" }}>
-            Home
-          </Link>
-        </ListItem>
-        <ListItem disableGutters={true}>
-          <Link
-            href="#about"
-            style={{ color: "black", textDecoration: "none" }}
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/" ? "red" : "black",
+                textDecoration: "none",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
           >
-            About
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link
-            href="#courses"
-            style={{ color: "black", textDecoration: "none" }}
-          >
-            Courses
-          </Link>
+            <Link href={"/"}> Home </Link>
+          </Box>
         </ListItem>
         <ListItem>
-          <Link
-            href="#whyUS"
-            style={{ color: "black", textDecoration: "none" }}
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/Search" ? "red" : "black",
+                textDecoration: "none",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
           >
-            WhyUs
-          </Link>
+            <Link href={"/Search"}> Search </Link>
+          </Box>
         </ListItem>
         <ListItem>
-          <Link
-            href="#services"
-            style={{ color: "black", textDecoration: "none" }}
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/LatestProfile" ? "red" : "black",
+                textDecoration: "none",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
           >
-            Services
-          </Link>
+            <Link href={"/LatestProfile"}> Latest&nbsp;Profile </Link>
+          </Box>
         </ListItem>
         <ListItem>
-          <Link
-            href="#contact"
-            style={{ color: "black", textDecoration: "none" }}
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/FeaturedProfile" ? "red" : "black",
+                textDecoration: "none",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
           >
-            Contact
-          </Link>
+            <Link href={"/FeaturedProfile"}> Featured&nbsp;Profile </Link>
+          </Box>
+        </ListItem>
+        <ListItem>
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/SuccessStories" ? "red" : "black",
+                textDecoration: "none",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
+          >
+            <Link href={"/SuccessStories"}> Success&nbsp;Stories </Link>
+          </Box>
+        </ListItem>
+        <ListItem>
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/Donate" ? "red" : "black",
+                textDecoration: "none",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
+          >
+            <Link href={"/Donate"}> Donate </Link>
+          </Box>
         </ListItem>
       </List>
     </Box>
@@ -115,14 +159,16 @@ const Navbar = () => {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            boxShadow: navShadow ? "1px 1px 8px gray" : "none",
+            boxShadow: color ? "1px 1px 8px gray" : "none",
           }}
         >
           <IconButton
-            color="inherit"
             aria-label="open drawer"
             edge="start"
-            sx={{ display: { sm: "flex", md: "none" } }}
+            sx={{
+              display: { sm: "flex", md: "none" },
+              color: color ? "black" : "white",
+            }}
             onClick={handleDrawerToggle}
           >
             <MenuIcon />
@@ -137,26 +183,28 @@ const Navbar = () => {
                   textDecoration: "none",
                 }}
               >
-                <Image
-                width={180} height={60}
-                  src="https://wedding-wonders.bugfinder.net/assets/uploads/logo/logo.png"
-                  alt="wedding-wonders"
-                />
+                <Box
+                  width={{ md: 170, sm: 140, xs: 80 }}
+                  height={{ md: 50, sm: 35, xs: 20 }}
+                >
+                  <Image
+                    fill
+                    src="https://wedding-wonders.bugfinder.net/assets/uploads/logo/logo.png"
+                    alt="wedding-wonders"
+                  />
+                </Box>
               </Link>
             </ListItem>
           </List>
-          <List disablePadding style={{ display: "flex" }}>
+          <List
+            disablePadding
+            sx={{ display: { md: "flex", sm: "none", xs: "none" } }}
+          >
             <ListItem disableGutters>
-            
               <Box
                 sx={{
                   "& a": {
-                    color:
-                      pathname === "/"
-                        ? "red"
-                        : color
-                        ? "black"
-                        : "white",
+                    color: pathname === "/" ? "red" : color ? "black" : "white",
                     textDecoration: "none",
                     "&:hover": {
                       color: "red",
@@ -167,8 +215,7 @@ const Navbar = () => {
                 <Link href={"/"}> Home </Link>
               </Box>
             </ListItem>
-            <ListItem >
-            
+            <ListItem>
               <Box
                 sx={{
                   "& a": {
@@ -188,8 +235,7 @@ const Navbar = () => {
                 <Link href={"/Search"}> Search </Link>
               </Box>
             </ListItem>
-            <ListItem >
-            
+            <ListItem>
               <Box
                 sx={{
                   "& a": {
@@ -209,8 +255,7 @@ const Navbar = () => {
                 <Link href={"/LatestProfile"}> Latest&nbsp;Profile </Link>
               </Box>
             </ListItem>
-            <ListItem >
-            
+            <ListItem>
               <Box
                 sx={{
                   "& a": {
@@ -230,8 +275,7 @@ const Navbar = () => {
                 <Link href={"/FeaturedProfile"}> Featured&nbsp;Profile </Link>
               </Box>
             </ListItem>
-            <ListItem >
-            
+            <ListItem>
               <Box
                 sx={{
                   "& a": {
@@ -252,7 +296,6 @@ const Navbar = () => {
               </Box>
             </ListItem>
             <ListItem disableGutters>
-            
               <Box
                 sx={{
                   "& a": {
@@ -272,7 +315,6 @@ const Navbar = () => {
                 <Link href={"/Donate"}> Donate </Link>
               </Box>
             </ListItem>
-          
           </List>
 
           <List className={styles.dropdown}>

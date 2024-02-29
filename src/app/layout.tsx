@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import { Box } from "@mui/material";
 import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Soul Sanctuary",
@@ -28,7 +28,7 @@ export default function RootLayout({
           <Footer />
         </Box>
         <Box
-        height={"100vh"}
+        height={{md:"100vh",xs:"90vh"}}
         position={"absolute"}
         width={"100%"}
         zIndex={-1}

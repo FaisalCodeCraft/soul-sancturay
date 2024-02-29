@@ -17,9 +17,13 @@ import React from "react";
 const Header = () => {
   return (
     <Box pb={3}>
-      <Grid container alignItems={"center"} height={"80vh"}>
-        <Grid item md={7} p={4}>
-          <Box px={5} color={"white"}>
+      <Grid
+        container
+        alignItems={"center"}
+        height={{ md: "80vh", sm: "100vh", xs: "90vh" }}
+      >
+        <Grid item md={7} p={{ md: 4, sm: 2, xs: 1 }}>
+          <Box px={{ md: 5 }} color={"white"}>
             <Typography
               overflow={"hidden"}
               color={"white"}
@@ -28,7 +32,12 @@ const Header = () => {
             >
               Find Your Perfect Soul Mate!
             </Typography>
-            <Typography mt={{ md: 2 }} fontSize={"1.1rem"}>
+            <Typography
+              display={{md:"block", xs: "none" }}
+              mt={{ md: 2 }}
+              fontSize={{ md: "1.1rem" }}
+              lineHeight={{ xs: "22px" }}
+            >
               {` Finding your perfect soul mate is like discovering the missing
               piece to your puzzle of life. It's about connecting with someone
               who understands you deeply, shares your values, and brings out the
@@ -39,14 +48,15 @@ const Header = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid item md={5} p={4}>
+        <Grid item md={5} p={{ md: 4, sm: 2, xs: 0 }}>
           <Box
             border={`1.2px solid ${COLOR.main.electricblue}`}
             borderRadius={"8px"}
             zIndex={999}
             color={"white"}
             pb={4}
-            mx={5}
+            mx={{ md: 5 }}
+            p={1}
           >
             <Typography
               textAlign={"center"}
