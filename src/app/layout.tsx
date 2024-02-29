@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import { Box } from "@mui/material";
 import Footer from "@/components/Footer/Footer";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,10 +34,9 @@ export default function RootLayout({
         zIndex={-1}
         top={0}
       >
-        <img
-          width={"100%"}
-          height={"100%"}
-          style={{ filter: "brightness(45%)" }}
+        <Image
+          fill
+          style={{ filter: "brightness(45%)"}}
           src="https://images.pexels.com/photos/169188/pexels-photo-169188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt=""
         />

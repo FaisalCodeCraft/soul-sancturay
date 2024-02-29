@@ -9,7 +9,8 @@ import { COLOR } from "@/constants/color";
 import { Box, Typography } from "@mui/material";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { People, PeopleOutline } from "@mui/icons-material";
+import { People } from "@mui/icons-material";
+import Image from "next/image";
 
 // stepper style
 const useStyles: any = makeStyles((theme: Theme) => ({
@@ -55,9 +56,10 @@ const Proposal = () => {
       textAlign={"center"}
     >
       <Box position={"absolute"} width={"50vh"}>
-        <img
-          width={"100%"}
-          style={{ opacity: 0.3 }}
+        <Image
+          width={250}
+          height={250}
+          style={{ opacity: 0.3,objectFit:"contain" }}
           src="https://wedding-wonders.bugfinder.net/assets/uploads/content/633292302011f1664258608.png"
           alt=""
         />

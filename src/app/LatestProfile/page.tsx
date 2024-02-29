@@ -2,7 +2,7 @@ import React from 'react'
 
 const LatestProfile = () => {
   return (
-    <div>LatestProfile</div>
+    <div style={{height:"80vh"}}>LatestProfile</div>
   )
 }
 

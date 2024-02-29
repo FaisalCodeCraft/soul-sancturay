@@ -6,9 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { COLOR } from "@/constants/color";
 import { Box, Typography } from "@mui/material";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { People, PeopleOutline } from "@mui/icons-material";
 import { FEATURED_MEMBERS } from "@/constants/contents";
 import Image from "next/image";
 
@@ -52,9 +50,10 @@ const FeaturedMembers = () => {
         LATEST FEATURED MEMBERS
       </Typography>
       <Box position={"absolute"} left={-150} top={0} width={"300px"} zIndex={-99}>
-        <img
-          width={"100%"}
-          style={{ opacity: 0.8 }}
+        <Image
+        width={300}
+        height={350}
+          style={{ opacity: 0.8,objectFit:"cover" }}
           src="https://wedding-wonders.bugfinder.net/assets/uploads/content/6332933b3d1851664258875.png"
           alt=""
         />

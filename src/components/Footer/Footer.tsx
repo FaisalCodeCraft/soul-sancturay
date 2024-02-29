@@ -1,5 +1,6 @@
 import { COLOR } from "@/constants/color";
 import { Box, Grid, Typography } from "@mui/material";
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
@@ -11,8 +12,8 @@ const Footer = () => {
       mt={10}
     >
       <Box position={"absolute"} width={"50vh"} bottom={0}>
-        <img
-          width={"100%"}
+        <Image
+        fill
           style={{ opacity: 0.6 }}
           src="https://wedding-wonders.bugfinder.net/assets/uploads/content/63425fd5595131665294293.png"
           alt=""

@@ -2,7 +2,7 @@ import React from 'react'
 
 const FeaturedProfile = () => {
   return (
-    <div>FeaturedProfile</div>
+    <div style={{height:"80vh"}}>FeaturedProfile</div>
   )
 }
 

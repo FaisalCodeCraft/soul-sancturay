@@ -16,8 +16,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import styles from "./navbar.module.css";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { test } from "@/constants/contents";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
   // console.log(cartLenght)
@@ -25,7 +25,6 @@ const Navbar = () => {
   const [navShadow, setNavShadow] = React.useState(false);
   const [color, setColor] = React.useState(false);
 
-  const hello = test.propsalByCast.content
 
   const changeBgColor = () => {
     if (window.scrollY >= 5) {
@@ -37,12 +36,7 @@ const Navbar = () => {
     }
   };
   window.addEventListener("scroll", changeBgColor);
-  // const changeColor = () => {
-  //   if (window.scrollY >= 5) {
-  //     setColor(true);
-  //   } else setColor(false);
-  // };
-  // window.addEventListener("scroll", changeColor);
+ 
   const pathname = usePathname();
 
   const handleDrawerToggle = () => setMobileOpen((prevState) => !prevState);
@@ -140,8 +134,8 @@ const Navbar = () => {
                   textDecoration: "none",
                 }}
               >
-                <img
-                  className={styles.image}
+                <Image
+                width={180} height={60}
                   src="https://wedding-wonders.bugfinder.net/assets/uploads/logo/logo.png"
                   alt="wedding-wonders"
                 />
