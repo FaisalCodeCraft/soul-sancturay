@@ -3,14 +3,9 @@ import { COLOR } from "@/constants/color";
 import { CASTS, COUNTRIES } from "@/constants/contents";
 import {
   Box,
-  Button,
   FormControl,
   FormControlLabel,
-  FormHelperText,
-  FormLabel,
   Grid,
-  Input,
-  InputLabel,
   MenuItem,
   Radio,
   RadioGroup,
