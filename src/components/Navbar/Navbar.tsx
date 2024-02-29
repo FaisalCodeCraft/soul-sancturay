@@ -35,7 +35,10 @@ const Navbar = () => {
       setColor(false);
     }
   };
-  window.addEventListener("scroll", changeBgColor);
+  
+  if (typeof window !== 'undefined') {
+    window.addEventListener("scroll", changeBgColor);
+  }
  
   const pathname = usePathname();
 

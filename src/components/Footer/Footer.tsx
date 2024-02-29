@@ -13,7 +13,7 @@ const Footer = () => {
     >
       <Box position={"absolute"} width={"50vh"} bottom={0}>
         <Image
-        fill
+          fill
           style={{ opacity: 0.6 }}
           src="https://wedding-wonders.bugfinder.net/assets/uploads/content/63425fd5595131665294293.png"
           alt=""
@@ -23,8 +23,9 @@ const Footer = () => {
         <Grid container justifyContent={"center"} alignItems={"center"}>
           <Grid item md={3}>
             <Box>
-              <img
-                width={"170px"}
+              <Image
+                width={170}
+                height={100}
                 src="https://wedding-wonders.bugfinder.net/assets/uploads/logo/logo.png"
                 alt="wedding-wonders"
               />
