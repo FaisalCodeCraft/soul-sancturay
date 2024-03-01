@@ -20,23 +20,23 @@ const Header = () => {
       <Grid
         container
         alignItems={"center"}
-        height={{ md: "80vh", sm: "100vh", xs: "90vh" }}
+        height={{ md: "80vh", sm: "100vh", xs: "120vh" }}
       >
         <Grid item md={7} p={{ md: 4, sm: 2, xs: 1 }}>
           <Box px={{ md: 5 }} color={"white"}>
             <Typography
               overflow={"hidden"}
               color={"white"}
-              fontSize={{ md: "4rem", sm: "2rem" }}
+              fontSize={{ md: "4rem", sm: "2rem",xs:"1.4rem" }}
               lineHeight={{ md: "68px" }}
             >
               Find Your Perfect Soul Mate!
             </Typography>
             <Typography
-              display={{md:"block", xs: "none" }}
-              mt={{ md: 2 }}
-              fontSize={{ md: "1.1rem" }}
-              lineHeight={{ xs: "22px" }}
+              display={"block"}
+              mt={{ md: 3 ,xs:.5}}
+              fontSize={{ md: "1.2rem",xs:".9rem" }}
+              lineHeight={{md:"25px", xs: "20px" }}
             >
               {` Finding your perfect soul mate is like discovering the missing
               piece to your puzzle of life. It's about connecting with someone
@@ -48,15 +48,14 @@ const Header = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid item md={5} p={{ md: 4, sm: 2, xs: 0 }}>
+        <Grid item md={5} xs={12} p={{ md: 4, sm: 2, xs: 1 }}>
           <Box
             border={`1.2px solid ${COLOR.main.electricblue}`}
             borderRadius={"8px"}
             zIndex={999}
             color={"white"}
-            pb={4}
+            padding={"0px 0px 16px 0px"}
             mx={{ md: 5 }}
-            p={1}
           >
             <Typography
               textAlign={"center"}
@@ -238,8 +237,8 @@ const Header = () => {
                 select
                 defaultValue={"Any"}
                 SelectProps={{
-                  style: {
-                    width: "300px",
+                  sx: {
+                    width:{md: "300px",xs:"220px"},
                     color: "white",
                     top: 0,
                   },

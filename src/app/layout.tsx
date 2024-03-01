@@ -28,7 +28,7 @@ export default function RootLayout({
           <Footer />
         </Box>
         <Box
-        height={{md:"100vh",xs:"90vh"}}
+        height={{md:"100vh",xs:"150vh"}}
         position={"absolute"}
         width={"100%"}
         zIndex={-1}

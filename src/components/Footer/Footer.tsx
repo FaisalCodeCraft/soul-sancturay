@@ -21,7 +21,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <Box position={"relative"} bgcolor={COLOR.gray.light} mt={10} px={3}>
+    <Box position={"relative"} mt={5} px={3} pb={3}>
       <Box position={"absolute"} width={"50vh"} bottom={0}>
         <Image
           fill
@@ -30,8 +30,8 @@ const Footer = () => {
           alt=""
         />
       </Box>
-      <Box p={5}>
-        <Grid container spacing={3} justifyContent={"center"}>
+      <Box p={{ md: 5 }}>
+        <Grid container spacing={3} justifyContent={{ md: "center" }}>
           <Grid item md={2.5}>
             <Box mt={-1}>
               <Image
@@ -103,10 +103,10 @@ const Footer = () => {
               </Box>
             </List>
           </Grid>
-          <Grid item md={3}>
+          <Grid item md={3} xs={6} pr={{ xs: 4 }}>
             <Box>
               <Typography fontWeight={"bold"} fontFamily={"monospace"}>
-                USEFUL LINKS
+                USEFUL&nbsp;LINKS
               </Typography>
               <List disablePadding sx={{ mt: 2 }}>
                 <ListItem disableGutters>
@@ -211,7 +211,7 @@ const Footer = () => {
               </List>
             </Box>
           </Grid>
-          <Grid item md={3}>
+          <Grid item md={3} xs={6}>
             <Box>
               <Typography fontWeight={"bold"} fontFamily={"monospace"}>
                 QUICK SEARCH
@@ -307,17 +307,30 @@ const Footer = () => {
                 border={`1px solid ${COLOR.gray.dark}`}
               >
                 <TextField
-                fullWidth
+                  fullWidth
                   type="email"
-                  label="Enter Your Email"
+                  placeholder="Enter Your Email"
                   size="small"
                   variant="standard"
                   InputProps={{
-                    style: { border: "none", background: "white" },
+                    sx: {
+                      border: "none",
+                      background: "white",
+                      color: "black",
+                      marginTop:.6,
+                      ml:1
+                    },
                     disableUnderline: true,
                   }}
                 />
-                <Button sx={{ bgcolor: "black",borderRadius:0,color:"white", "&:hover": {bgcolor: "black",color:"red"} }}>
+                <Button
+                  sx={{
+                    bgcolor: "black",
+                    borderRadius: 0,
+                    color: "white",
+                    "&:hover": { bgcolor: "black", color: "red" },
+                  }}
+                >
                   <Telegram />
                 </Button>
               </Box>

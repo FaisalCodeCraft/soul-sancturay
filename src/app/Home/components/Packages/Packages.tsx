@@ -35,7 +35,7 @@ const Packages = () => {
           Packages
           <Grid container spacing={{md:6}} px={{md:3}}>
             {PACKAGES.map((feature, i) => (
-              <Grid item md={4} mt={5} key={i}>
+              <Grid item md={4} xs={12} mt={5} key={i}>
                 <Box
                   bgcolor={"white"}
                   boxShadow={"0 0 12px 1px lightGray"}

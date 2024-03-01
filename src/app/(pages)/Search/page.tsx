@@ -1,8 +1,9 @@
 import React from 'react'
+import SearchContainer from './container/SearchContainer'
 
 const Search = () => {
   return (
-    <div style={{height:"80vh"}}>Search</div>
+    <SearchContainer/>
   )
 }
 
