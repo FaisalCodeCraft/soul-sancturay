@@ -20,7 +20,6 @@ const Header = () => {
       <Grid
         container
         alignItems={"center"}
-        height={{ md: "80vh", sm: "100vh", xs: "120vh" }}
       >
         <Grid item md={7} p={{ md: 4, sm: 2, xs: 1 }}>
           <Box px={{ md: 5 }} color={"white"}>
