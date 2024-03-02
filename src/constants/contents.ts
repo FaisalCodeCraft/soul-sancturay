@@ -187,3 +187,47 @@ export const PACKAGES = [
     autoMatch:"Show Auto Profile Match",
   },
 ];
+
+export const RELIGION = [
+  "Islam",
+  "Christian",
+  "Sikh",
+  "Parsi",
+  "Hindu",
+  "Jain",
+  "Bahai",
+  "Other",
+];
+export const LANGUAGES = [
+  "Urdu",
+  "Pushto",
+  "Arabic",
+  "Turkey",
+  "English",
+  "Hindi",
+  "Bingali",
+  "Parsi",
+  "Other",
+];
+export const EDUCATION = [
+  "FA/ F.Sc/ High Scholl",
+  "Bacholor",
+  "Master",
+  "Doctorate",
+  "Diploma",
+  "Prefer not to say",
+  "Other",
+];
+export const OCCUPATIOINS = [
+  "Buisness",
+  "Teacher",
+  "Army",
+  "Air Force",
+  "Air Man",
+  "Clerk",
+  "Consultant",
+  "Docter",
+  "Engineer",
+  "Prefer not to say",
+  "Other",
+];
