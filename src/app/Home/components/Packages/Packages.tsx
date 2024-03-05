@@ -59,7 +59,7 @@ const Packages = () => {
                   </small>
                   {feature?.price}
                 </Typography>
-                <List sx={{ width: "211px", margin: "auto"}}>
+                <List sx={{ width: "230px", margin: "auto" }}>
                   <ListItem sx={{ fontSize: "14px", color: COLOR.gray.dark }}>
                     <CheckOutlined fontSize="small" sx={{ mr: 1 }} />
                     {feature?.expressInterest}
