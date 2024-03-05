@@ -1,3 +1,4 @@
+import ButtonComp from "@/components/Button/Button";
 import { COLOR } from "@/constants/color";
 import {
   CASTS,
@@ -35,7 +36,7 @@ const AdvanceSearch = () => {
         sx={{
           bgcolor: "white",
           py: { md: 1 },
-          boxShadow: "0 0 12px 1px lightGray",
+          boxShadow: " 0px 0px 12px 1px lightGray",
         }}
       >
         <Typography
@@ -54,13 +55,12 @@ const AdvanceSearch = () => {
                 <FormControl
                   sx={{
                     display: { md: "flex", xs: "block" },
-                    flexDirection: "row",
-                    alignItems: "center",
                     mt: 0.5,
                   }}
                 >
                   <label
                     style={{
+                      marginBottom: "8px",
                       fontSize: "14px",
                       fontWeight: "bold",
                       marginRight: "5px",
@@ -75,7 +75,7 @@ const AdvanceSearch = () => {
                     sx={{
                       border: "1px solid white",
                       borderRadius: "4px",
-                      boxShadow: "0 0 12px 1px lightGray",
+                      boxShadow: "inset 0px 0px 1px 1px lightGray",
                     }}
                     InputProps={{
                       inputProps: {
@@ -91,17 +91,13 @@ const AdvanceSearch = () => {
                 <FormControl
                   sx={{
                     display: { md: "flex", xs: "block" },
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    mt: 0.5,
                   }}
                 >
                   <FormLabel
                     sx={{
                       fontSize: "14px",
                       fontWeight: "bold",
-                      marginRight: { md: "5px" },
+                      mb: "8px",
                     }}
                   >
                     to:{" "}
@@ -113,7 +109,7 @@ const AdvanceSearch = () => {
                     sx={{
                       border: "1px solid white",
                       borderRadius: "4px",
-                      boxShadow: "0 0 12px 1px lightGray",
+                      boxShadow: "inset 0px 0px 1px 1px lightGray",
                     }}
                     InputProps={{
                       inputProps: {
@@ -129,14 +125,12 @@ const AdvanceSearch = () => {
                 <FormControl
                   sx={{
                     display: { md: "flex", xs: "block" },
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
                     my: 2,
                   }}
                 >
                   <label
                     style={{
+                      marginBottom: "8px",
                       fontSize: "14px",
                       fontWeight: "bold",
                       marginRight: "5px",
@@ -151,7 +145,7 @@ const AdvanceSearch = () => {
                     sx={{
                       border: "1px solid white",
                       borderRadius: "4px",
-                      boxShadow: "0 0 12px 1px lightGray",
+                      boxShadow: "inset 0px 0px 1px 1px lightGray",
                     }}
                     size="small"
                   >
@@ -168,14 +162,12 @@ const AdvanceSearch = () => {
                 <FormControl
                   sx={{
                     display: { md: "flex", xs: "block" },
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
                     mb: 2,
                   }}
                 >
                   <label
                     style={{
+                      marginBottom: "8px",
                       fontSize: "14px",
                       fontWeight: "bold",
                       marginRight: "5px",
@@ -190,7 +182,7 @@ const AdvanceSearch = () => {
                     sx={{
                       border: "1px solid white",
                       borderRadius: "4px",
-                      boxShadow: "0 0 12px 1px lightGray",
+                      boxShadow: "inset 0px 0px 1px 1px lightGray",
                     }}
                     size="small"
                   >
@@ -207,14 +199,12 @@ const AdvanceSearch = () => {
                 <FormControl
                   sx={{
                     display: { md: "flex", xs: "block" },
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
                     mb: 2,
                   }}
                 >
                   <label
                     style={{
+                      marginBottom: "8px",
                       fontSize: "14px",
                       fontWeight: "bold",
                       marginRight: "5px",
@@ -229,7 +219,7 @@ const AdvanceSearch = () => {
                     sx={{
                       border: "1px solid white",
                       borderRadius: "4px",
-                      boxShadow: "0 0 12px 1px lightGray",
+                      boxShadow: "inset 0px 0px 1px 1px lightGray",
                     }}
                     size="small"
                   >
@@ -246,20 +236,17 @@ const AdvanceSearch = () => {
           </Grid>
           {/* Grid item 2 */}
 
-          <Grid item md={6} xs={12}>
+          <Grid item md={6} xs={12} mt={{ md: 0, sm: 0, xs: -5 }}>
             <Grid container>
               <Grid item md={6} xs={12}>
                 <FormControl
                   sx={{
                     display: { md: "flex", xs: "block" },
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    mt: 0.5,
                   }}
                 >
                   <label
                     style={{
+                      marginBottom: "8px",
                       fontSize: "14px",
                       fontWeight: "bold",
                       marginRight: "5px",
@@ -274,7 +261,12 @@ const AdvanceSearch = () => {
                     sx={{
                       border: "1px solid white",
                       borderRadius: "4px",
-                      boxShadow: "0 0 12px 1px lightGray",
+                      boxShadow: "inset 0px 0px 1px 1px lightGray",
+                      // "& .MuiOutlinedInput-root": {
+                      //   "&.Mui-focused fieldset": {
+                      //     borderColor: COLOR.main.cyan
+                      //   }
+                      // }
                     }}
                     InputProps={{
                       inputProps: {
@@ -290,17 +282,13 @@ const AdvanceSearch = () => {
                 <FormControl
                   sx={{
                     display: { md: "flex", xs: "block" },
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    mt: 0.5,
                   }}
                 >
                   <FormLabel
                     sx={{
                       fontSize: "14px",
                       fontWeight: "bold",
-                      marginRight: "5px",
+                      mb: "5px",
                     }}
                   >
                     to:{" "}
@@ -312,7 +300,7 @@ const AdvanceSearch = () => {
                     sx={{
                       border: "1px solid white",
                       borderRadius: "4px",
-                      boxShadow: "0 0 12px 1px lightGray",
+                      boxShadow: "inset 0px 0px 1px 1px lightGray",
                     }}
                     InputProps={{
                       inputProps: {
@@ -328,14 +316,12 @@ const AdvanceSearch = () => {
                 <FormControl
                   sx={{
                     display: { md: "flex", xs: "block" },
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
                     my: 2,
                   }}
                 >
                   <label
                     style={{
+                      marginBottom: "8px",
                       fontSize: "14px",
                       fontWeight: "bold",
                       marginRight: "5px",
@@ -350,7 +336,7 @@ const AdvanceSearch = () => {
                     sx={{
                       border: "1px solid white",
                       borderRadius: "4px",
-                      boxShadow: "0 0 12px 1px lightGray",
+                      boxShadow: "inset 0px 0px 1px 1px lightGray",
                     }}
                     size="small"
                   >
@@ -367,14 +353,12 @@ const AdvanceSearch = () => {
                 <FormControl
                   sx={{
                     display: { md: "flex", xs: "block" },
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
                     mb: 2,
                   }}
                 >
                   <label
                     style={{
+                      marginBottom: "8px",
                       fontSize: "14px",
                       fontWeight: "bold",
                       marginRight: "5px",
@@ -389,7 +373,7 @@ const AdvanceSearch = () => {
                     sx={{
                       border: "1px solid white",
                       borderRadius: "4px",
-                      boxShadow: "0 0 12px 1px lightGray",
+                      boxShadow: "inset 0px 0px 1px 1px lightGray",
                     }}
                     size="small"
                   >
@@ -406,14 +390,12 @@ const AdvanceSearch = () => {
                 <FormControl
                   sx={{
                     display: { md: "flex", xs: "block" },
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
                     mb: 2,
                   }}
                 >
                   <label
                     style={{
+                      marginBottom: "8px",
                       fontSize: "14px",
                       fontWeight: "bold",
                       marginRight: "5px",
@@ -428,7 +410,7 @@ const AdvanceSearch = () => {
                     sx={{
                       border: "1px solid white",
                       borderRadius: "4px",
-                      boxShadow: "0 0 12px 1px lightGray",
+                      boxShadow: "inset 0px 0px 1px 1px lightGray",
                     }}
                     size="small"
                   >
@@ -444,28 +426,28 @@ const AdvanceSearch = () => {
             </Grid>
           </Grid>
           <Grid item md={12} xs={12}>
-            <FormControl fullWidth >
-            <FormLabel
-                  sx={{
-                    color: "black",
-                    fontSize: "1.2rem",
-                    fontWeight: "bold",
-                    mt: { md: 0.7 },
-                    mr: { md: 2 },
-                  }}
-                >
-                  Show:
-                </FormLabel>
+            <FormControl fullWidth>
+              <label
+                style={{
+                  fontSize: "1.2rem",
+                  fontWeight: "bold",
+                  marginTop: 0.7,
+                }}
+              >
+                Show:
+              </label>
               <FormGroup row>
-                
                 <FormControlLabel
                   control={
                     <Checkbox
                       defaultChecked
                       sx={{
-                        color: COLOR.main.cyan ,
+                        color: COLOR.main.cyan,
                         "&.Mui-checked": {
                           color: COLOR.main.cyan,
+                        },
+                        "&:hover": {
+                          bgcolor: "transparent",
                         },
                       }}
                     />
@@ -476,9 +458,12 @@ const AdvanceSearch = () => {
                   control={
                     <Checkbox
                       sx={{
-                        color: COLOR.main.cyan ,
+                        color: COLOR.main.cyan,
                         "&.Mui-checked": {
                           color: COLOR.main.cyan,
+                        },
+                        "&:hover": {
+                          bgcolor: "transparent",
                         },
                       }}
                     />
@@ -489,9 +474,12 @@ const AdvanceSearch = () => {
                   control={
                     <Checkbox
                       sx={{
-                        color: COLOR.main.cyan ,
+                        color: COLOR.main.cyan,
                         "&.Mui-checked": {
                           color: COLOR.main.cyan,
+                        },
+                        "&:hover": {
+                          bgcolor: "transparent",
                         },
                       }}
                     />
@@ -502,6 +490,9 @@ const AdvanceSearch = () => {
             </FormControl>
           </Grid>
         </Grid>
+        <Box pb={2} mt={3}>
+          <ButtonComp title="Search" width="100px" />
+        </Box>
       </Container>
     </Box>
   );

@@ -257,7 +257,7 @@ const Header = () => {
                 ))}
               </TextField>
             </FormControl>
-            <ButtonComp title="Search" />
+            <ButtonComp title="Search" width="100px"/>
           </Box>
         </Grid>
       </Grid>
