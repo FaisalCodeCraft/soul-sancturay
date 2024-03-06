@@ -56,7 +56,7 @@ const Navbar = () => {
             sx={{
               "& a": {
                 color: pathname === "/" ? "red" : "black",
-                textDecoration: "none",
+                textDecoration: pathname === "/" ? "underline": "none",
                 "&:hover": {
                   color: "red",
                 },
@@ -205,9 +205,10 @@ const Navbar = () => {
                 sx={{
                   "& a": {
                     color: pathname === "/" ? "red" : color ? "black" : "white",
-                    textDecoration: "none",
+                    textDecoration:pathname === "/" ? "underline": "none",
                     "&:hover": {
                       color: "red",
+                      textDecoration:"underline"
                     },
                   },
                 }}
@@ -225,9 +226,10 @@ const Navbar = () => {
                         : color
                         ? "black"
                         : "white",
-                    textDecoration: "none",
+                    textDecoration: pathname === "/Search" ? "underline": "none",
                     "&:hover": {
                       color: "red",
+                      textDecoration:"underline"
                     },
                   },
                 }}
@@ -245,9 +247,10 @@ const Navbar = () => {
                         : color
                         ? "black"
                         : "white",
-                    textDecoration: "none",
+                    textDecoration: pathname === "/LatestProfile" ? "underline": "none",
                     "&:hover": {
                       color: "red",
+                      textDecoration:"underline"
                     },
                   },
                 }}
@@ -265,9 +268,10 @@ const Navbar = () => {
                         : color
                         ? "black"
                         : "white",
-                    textDecoration: "none",
+                    textDecoration: pathname === "/FeaturedProfile" ? "underline": "none",
                     "&:hover": {
                       color: "red",
+                      textDecoration:"underline"
                     },
                   },
                 }}
@@ -285,9 +289,10 @@ const Navbar = () => {
                         : color
                         ? "black"
                         : "white",
-                    textDecoration: "none",
+                    textDecoration: pathname === "/SuccessStories" ? "underline": "none",
                     "&:hover": {
                       color: "red",
+                      textDecoration:"underline"
                     },
                   },
                 }}
@@ -305,9 +310,10 @@ const Navbar = () => {
                         : color
                         ? "black"
                         : "white",
-                    textDecoration: "none",
+                    textDecoration: pathname === "/Donate" ? "underline": "none",
                     "&:hover": {
                       color: "red",
+                      textDecoration:"underline"
                     },
                   },
                 }}

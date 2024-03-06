@@ -7,22 +7,28 @@ type Props = {};
 
 const QuickSearch = (props: Props) => {
   return (
-    <Box color={"white"} my={{ md: 8 ,sm:4,xs:2}}>
-      <Container maxWidth="lg">
-        <Typography fontSize={{md:"3rem",sm:"2rem",xs:"1.5rem"}} my={2} textAlign={"center"}>
+    <Box color={"white"} my={{ md: 8, sm: 4, xs: 2 }}>
+      <Container maxWidth="md">
+        <Typography
+          fontSize={{ md: "3rem", sm: "2rem", xs: "1.5rem" }}
+          my={2}
+          textAlign={"center"}
+        >
           Quick Search
         </Typography>
 
         <Box
-          p={{md:3,sm:2,xs:1}}
+          p={{ md: 3, sm: 2, xs: 1 }}
           border={`1px solid ${COLOR.main.cyan}`}
-          width={{md:"500px",sm:"300px",xs:"100%"}}
-          m={"auto"}
+          borderRadius={"4px"}
+          // width={{md:"500px",sm:"300px",xs:"100%"}}
+          // m={"auto"}
         >
           <Box
             display={"flex"}
             bgcolor={"white"}
             border={`1px solid ${COLOR.gray.dark}`}
+            borderRadius={"4px"}
           >
             <TextField
               fullWidth
@@ -37,7 +43,7 @@ const QuickSearch = (props: Props) => {
                   color: "black",
                   marginTop: 0.6,
                   ml: 1,
-                  p: {md:1},
+                  p: { md: 1 },
                 },
                 disableUnderline: true,
               }}
@@ -45,7 +51,7 @@ const QuickSearch = (props: Props) => {
             <Button
               sx={{
                 bgcolor: "black",
-                borderRadius: 0,
+                borderRadius: "0px 4px 4px 0px",
                 color: "white",
                 "&:hover": { bgcolor: "black", color: "red" },
               }}

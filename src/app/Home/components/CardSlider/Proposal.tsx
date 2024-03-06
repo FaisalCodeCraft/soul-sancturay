@@ -118,6 +118,7 @@ const Proposal = () => {
               {MARRIAGE_PROPOSALS[i].BY_CATEGORY?.map((item, i) => (
                 <Typography
                   sx={{
+                    cursor:"pointer",
                     mb: {md:1},
                     ":last-child": {
                       borderRight: "none",
@@ -129,7 +130,6 @@ const Proposal = () => {
                     color: COLOR.gray.dark,
                   }}
                   key={i}
-                  style={{ padding: "0px 5px" }}
                 >
                   {item}
                 </Typography>

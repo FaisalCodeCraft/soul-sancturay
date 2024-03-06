@@ -99,7 +99,7 @@ const FeaturedMembers = () => {
       <Slider {...settings}>
         {FEATURED_MEMBERS.map((member, i) => (
           <Box key={i} mt={{ md: 5, sm: 3, xs: 2 }} pb={5}>
-            <Box width={"220px"} m={"auto"}>
+            <Box width={"220px"} m={"auto"} >
               <Image
                 width={220}
                 height={220}
@@ -108,6 +108,7 @@ const FeaturedMembers = () => {
                   textAlign: "center",
                   marginBottom: "16px",
                   objectFit: "cover",
+                  border:`2px solid ${COLOR.gray.dark}`
                 }}
                 src={member.image_url}
                 alt={member?.name}

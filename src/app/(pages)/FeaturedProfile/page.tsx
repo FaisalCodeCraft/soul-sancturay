@@ -1,8 +1,9 @@
 import React from 'react'
+import FpContainer from './container/FpContainer'
 
 const FeaturedProfile = () => {
   return (
-    <div style={{height:"80vh"}}>FeaturedProfile</div>
+    <FpContainer/>
   )
 }
 

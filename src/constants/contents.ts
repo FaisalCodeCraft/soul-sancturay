@@ -59,7 +59,7 @@ export const MARRIAGE_PROPOSALS = [
 
 export const FEATURED_MEMBERS = [
   {
-    name: "UmerFarooq",
+    name: "Umer Farooq",
     id: "RPAK122759",
     marital_status: "Unmarried",
     gender: "Male",
