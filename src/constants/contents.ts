@@ -1,5 +1,3 @@
-
-
 export const CASTS = [
   "Ansari",
   "Arain",
@@ -164,27 +162,27 @@ export const PACKAGES = [
     title: "Premium Packages",
     price: "29",
     usd: "$",
-    expressInterest:"20 Express Interests",
-    uplaodPics:"20 Gallery Photo Upload",
-    profileinfo:" 20 Profile Info View",
-    autoMatch:"Show Auto Profile Match",
+    expressInterest: "20 Express Interests",
+    uplaodPics: "20 Gallery Photo Upload",
+    profileinfo: " 20 Profile Info View",
+    autoMatch: "Show Auto Profile Match",
   },
   {
     title: "Luxury Packages",
     price: "19",
     usd: "$",
-    expressInterest:"10 Express Interests",
-    uplaodPics:"10 Gallery Photo Upload",
-    profileinfo:" 10 Profile Info View",
-    autoMatch:"Show Auto Profile Match",
+    expressInterest: "10 Express Interests",
+    uplaodPics: "10 Gallery Photo Upload",
+    profileinfo: " 10 Profile Info View",
+    autoMatch: "Show Auto Profile Match",
   },
   {
     title: "Free Packages",
     price: "Free",
-    expressInterest:"5 Express Interests",
-    uplaodPics:"2 Gallery Photo Upload",
-    profileinfo:" 0 Profile Info View",
-    autoMatch:"Show Auto Profile Match",
+    expressInterest: "5 Express Interests",
+    uplaodPics: "2 Gallery Photo Upload",
+    profileinfo: " 0 Profile Info View",
+    autoMatch: "Show Auto Profile Match",
   },
 ];
 
@@ -230,4 +228,64 @@ export const OCCUPATIOINS = [
   "Engineer",
   "Prefer not to say",
   "Other",
+];
+
+export const STORIES = [
+  {
+    id: 1,
+    poster:
+      "https://images.pexels.com/photos/5729046/pexels-photo-5729046.jpeg?auto=compress&cs=tinysrgb&w=600",
+    mPartnerName: "Mrs.Hemalin",
+    fePartnerName: "Mr.Smith",
+    successDate: "08 Jan,2016",
+    title:
+      "I don't care how many people are in this world I want you end Of story.",
+    postBy: "Posted By Smith On 01 Jan, 1970",
+    GALLERY: [
+      "https://images.pexels.com/photos/6532809/pexels-photo-6532809.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/5096307/pexels-photo-5096307.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/13461082/pexels-photo-13461082.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/17469354/pexels-photo-17469354/free-photo-of-man-taking-pictures-of-newlyweds-on-wedding.jpeg?auto=compress&cs=tinysrgb&w=600",
+    ],
+    details:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur asperiores iure deleniti. Fugiat maxime pariatur possimus reprehenderit. Dignissimos atque harum aliquid impedit voluptatibus? Aperiam quam animi mollitia fugit voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur asperiores iure deleniti. Fugiat maxime pariatur possimus reprehenderit. Dignissimos atque harum aliquid impedit voluptatibus? Aperiam quam animi mollitia fugit voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur asperiores iure deleniti. Fugiat maxime pariatur possimus reprehenderit. Dignissimos atque harum aliquid impedit voluptatibus? Aperiam quam animi mollitia fugit voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur asperiores iure deleniti. Fugiat maxime pariatur possimus reprehenderit. Dignissimos atque harum aliquid impedit voluptatibus? Aperiam quam animi mollitia fugit voluptatum.",
+  },
+  {
+    id: 2,
+    poster:
+      "https://images.pexels.com/photos/219776/pexels-photo-219776.jpeg?auto=compress&cs=tinysrgb&w=600",
+    mPartnerName: "Mrs.Hemalin",
+    fePartnerName: "Mr.Smith",
+    successDate: "08 Jan,2016",
+    title:
+      "I don't care how many people are in this world I want you end Of story.",
+    postBy: "Posted By Smith On 01 Jan, 1970",
+    GALLERY : [
+            "https://images.pexels.com/photos/6532809/pexels-photo-6532809.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/5096307/pexels-photo-5096307.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/13461082/pexels-photo-13461082.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/17469354/pexels-photo-17469354/free-photo-of-man-taking-pictures-of-newlyweds-on-wedding.jpeg?auto=compress&cs=tinysrgb&w=600",
+    ],
+    details:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur asperiores iure deleniti. Fugiat maxime pariatur possimus reprehenderit. Dignissimos atque harum aliquid impedit voluptatibus? Aperiam quam animi mollitia fugit voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur asperiores iure deleniti. Fugiat maxime pariatur possimus reprehenderit. Dignissimos atque harum aliquid impedit voluptatibus? Aperiam quam animi mollitia fugit voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur asperiores iure deleniti. Fugiat maxime pariatur possimus reprehenderit. Dignissimos atque harum aliquid impedit voluptatibus? Aperiam quam animi mollitia fugit voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur asperiores iure deleniti. Fugiat maxime pariatur possimus reprehenderit. Dignissimos atque harum aliquid impedit voluptatibus? Aperiam quam animi mollitia fugit voluptatum.",
+  },
+  {
+    id: 3,
+    poster:
+      "https://images.pexels.com/photos/7832554/pexels-photo-7832554.jpeg?auto=compress&cs=tinysrgb&w=600",
+    mPartnerName: "Mrs.Hemalin",
+    fePartnerName: "Mr.Smith",
+    successDate: "08 Jan,2016",
+    title:
+      "I don't care how many people are in this world I want you end Of story.",
+    postBy: "Posted By Smith On 01 Jan, 1970",
+    GALLERY : [
+            "https://images.pexels.com/photos/6532809/pexels-photo-6532809.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/5096307/pexels-photo-5096307.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/13461082/pexels-photo-13461082.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/17469354/pexels-photo-17469354/free-photo-of-man-taking-pictures-of-newlyweds-on-wedding.jpeg?auto=compress&cs=tinysrgb&w=600",
+    ],
+    details:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur asperiores iure deleniti. Fugiat maxime pariatur possimus reprehenderit. Dignissimos atque harum aliquid impedit voluptatibus? Aperiam quam animi mollitia fugit voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur asperiores iure deleniti. Fugiat maxime pariatur possimus reprehenderit. Dignissimos atque harum aliquid impedit voluptatibus? Aperiam quam animi mollitia fugit voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur asperiores iure deleniti. Fugiat maxime pariatur possimus reprehenderit. Dignissimos atque harum aliquid impedit voluptatibus? Aperiam quam animi mollitia fugit voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur asperiores iure deleniti. Fugiat maxime pariatur possimus reprehenderit. Dignissimos atque harum aliquid impedit voluptatibus? Aperiam quam animi mollitia fugit voluptatum.",
+  },
 ];
