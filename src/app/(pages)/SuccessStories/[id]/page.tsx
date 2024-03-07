@@ -20,7 +20,7 @@ const SingleStory = ({ params }: any) => {
       <Box bgcolor={COLOR.gray.light}>
         <Container maxWidth="md">
           {STORIES.map((story, i) => (
-            <Box>
+            <Box key={i}>
               {story?.id == params.id && (
                 <Box>
                   <Typography
