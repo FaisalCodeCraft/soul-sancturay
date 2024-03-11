@@ -65,7 +65,7 @@ const FmDetailModal = (props: any) => {
                 width={{ md: 160, sm: 130, xs: 100 }}
                 height={{ md: 160, sm: 130, xs: 100 }}
                 position={"relative"}
-                top={ 50}
+                top={ {md:50}}
               >
                 <Image
                   fill
