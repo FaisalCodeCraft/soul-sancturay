@@ -1,11 +1,20 @@
 "use client";
 import { COLOR } from "@/constants/color";
 import { FEATURED_MEMBERS } from "@/constants/contents";
-import { Box, Pagination, Stack, Typography } from "@mui/material";
+import { Box, Button, Pagination, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import dynamic from "next/dynamic";
+const FmDetailModal = dynamic(
+  () => import("../FmDetailModal/FmDetailModal"),
+  { ssr: false }
+);
 
 const FmProfiles = () => {
+
+  const [id, setId]:any = useState()
+  const [fmModal, setFmModal] = useState(false)
+
   const onCurrentPage = 3;
   const [page, setPage] = React.useState(1);
   const handleChange = (e: any, data: any) => {
@@ -24,7 +33,7 @@ const FmProfiles = () => {
           alignItems={"center"}
           borderRadius={"4px"}
           boxShadow={"0px 0px 4px 0px lightGray"}
-          px={{md:5,sm:3,xs:2}}
+          px={{ md: 5, sm: 3, xs: 2 }}
           mb={2}
         >
           <Box
@@ -33,7 +42,7 @@ const FmProfiles = () => {
             alignItems={"center"}
             mt={{ md: 2, xs: 5 }}
             pr={{ md: 5 }}
-            pb={{md:2}}
+            pb={{ md: 2 }}
           >
             <Image
               width={220}
@@ -56,7 +65,7 @@ const FmProfiles = () => {
               {member?.age}
             </Typography>
           </Box>
-          <Box mt={{md:-4}} pb={2} textAlign={{ md: "left", xs: "center" }}>
+          <Box mt={{ md: -4 }} pb={2} textAlign={{ md: "left", xs: "center" }}>
             <Typography>
               <span style={{ fontWeight: "bold", color: COLOR.gray.dark }}>
                 Marital Status:{" "}
@@ -81,10 +90,35 @@ const FmProfiles = () => {
               </span>
               {member?.location}
             </Typography>
+            <Typography mt={"10px"} fontSize={"15px"}>
+              <Button
+                size="small"
+                sx={{
+                  "&:hover": {
+                    bgcolor: "transparent",
+                  },
+                }}
+                onClick={() => {
+                  setId(member?.id)
+                  setFmModal(!fmModal)
+              }}
+              >
+                More...
+              </Button>
+              {fmModal && member.id===id &&(
+                
+                <FmDetailModal
+                featuredMember={member}
+                featuredMemberModal={fmModal}
+                onClose={() => setFmModal(false)}
+                />
+              )}
+                
+            </Typography>
           </Box>
         </Box>
       ))}
-      <Stack spacing={2} >
+      <Stack spacing={2}>
         <Pagination
           sx={{
             ".MuiPaginationItem-root": {
@@ -98,9 +132,9 @@ const FmProfiles = () => {
 
               "&:hover": { bgcolor: "rgb(254, 141, 141)", color: "white" },
             },
-              '& > .MuiPagination-ul': {
-                justifyContent: 'center',
-              },
+            "& > .MuiPagination-ul": {
+              justifyContent: "center",
+            },
           }}
           count={Math.ceil(FEATURED_MEMBERS.length / onCurrentPage)}
           page={page}

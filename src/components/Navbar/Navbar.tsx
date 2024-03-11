@@ -56,7 +56,7 @@ const Navbar = () => {
             sx={{
               "& a": {
                 color: pathname === "/" ? "red" : "black",
-                textDecoration: pathname === "/" ? "underline": "none",
+                textDecoration: pathname === "/" ? "underline" : "none",
                 "&:hover": {
                   color: "red",
                 },
@@ -205,10 +205,10 @@ const Navbar = () => {
                 sx={{
                   "& a": {
                     color: pathname === "/" ? "red" : color ? "black" : "white",
-                    textDecoration:pathname === "/" ? "underline": "none",
+                    textDecoration: pathname === "/" ? "underline" : "none",
                     "&:hover": {
                       color: "red",
-                      textDecoration:"underline"
+                      textDecoration: "underline",
                     },
                   },
                 }}
@@ -226,10 +226,11 @@ const Navbar = () => {
                         : color
                         ? "black"
                         : "white",
-                    textDecoration: pathname === "/Search" ? "underline": "none",
+                    textDecoration:
+                      pathname === "/Search" ? "underline" : "none",
                     "&:hover": {
                       color: "red",
-                      textDecoration:"underline"
+                      textDecoration: "underline",
                     },
                   },
                 }}
@@ -247,10 +248,11 @@ const Navbar = () => {
                         : color
                         ? "black"
                         : "white",
-                    textDecoration: pathname === "/LatestProfile" ? "underline": "none",
+                    textDecoration:
+                      pathname === "/LatestProfile" ? "underline" : "none",
                     "&:hover": {
                       color: "red",
-                      textDecoration:"underline"
+                      textDecoration: "underline",
                     },
                   },
                 }}
@@ -268,10 +270,11 @@ const Navbar = () => {
                         : color
                         ? "black"
                         : "white",
-                    textDecoration: pathname === "/FeaturedProfile" ? "underline": "none",
+                    textDecoration:
+                      pathname === "/FeaturedProfile" ? "underline" : "none",
                     "&:hover": {
                       color: "red",
-                      textDecoration:"underline"
+                      textDecoration: "underline",
                     },
                   },
                 }}
@@ -289,10 +292,11 @@ const Navbar = () => {
                         : color
                         ? "black"
                         : "white",
-                    textDecoration: pathname === "/SuccessStories" ? "underline": "none",
+                    textDecoration:
+                      pathname === "/SuccessStories" ? "underline" : "none",
                     "&:hover": {
                       color: "red",
-                      textDecoration:"underline"
+                      textDecoration: "underline",
                     },
                   },
                 }}
@@ -310,10 +314,11 @@ const Navbar = () => {
                         : color
                         ? "black"
                         : "white",
-                    textDecoration: pathname === "/Donate" ? "underline": "none",
+                    textDecoration:
+                      pathname === "/Donate" ? "underline" : "none",
                     "&:hover": {
                       color: "red",
-                      textDecoration:"underline"
+                      textDecoration: "underline",
                     },
                   },
                 }}
@@ -330,32 +335,35 @@ const Navbar = () => {
               />
             </Typography>
             <Box className={styles.dropdownContent}>
-              <ListItem sx={{ py: 1 }}>
-                <Box
-                  border={`1.5px solid ${COLOR.main.cyan}`}
-                  borderRadius={"50%"}
-                  width={"48px"}
-                  height={"48px"}
-                  display={"flex"}
-                  alignItems={"center"}
-                  justifyContent={"center"}
-                  mr={1}
-                  p={2}
-                >
-                  <LoginOutlined
-                    fontSize="large"
-                    sx={{
-                      bgcolor: COLOR.main.cyan,
-                      p: 0.7,
-                      width: "35px",
-                      height: "35px",
-                      borderRadius: "50%",
-                    }}
-                  />
-                </Box>
-                LOGIN
-              </ListItem>
+              <Link href={"/Login"}>
+                <ListItem sx={{ py: 1 }}>
+                  <Box
+                    border={`1.5px solid ${COLOR.main.cyan}`}
+                    borderRadius={"50%"}
+                    width={"48px"}
+                    height={"48px"}
+                    display={"flex"}
+                    alignItems={"center"}
+                    justifyContent={"center"}
+                    mr={1}
+                    p={2}
+                  >
+                    <LoginOutlined
+                      fontSize="large"
+                      sx={{
+                        bgcolor: COLOR.main.cyan,
+                        p: 0.7,
+                        width: "35px",
+                        height: "35px",
+                        borderRadius: "50%",
+                      }}
+                    />
+                  </Box>
+                  LOGIN
+                </ListItem>
+              </Link>
               <Divider />
+              <Link href={"/Register"}>
 
               <ListItem sx={{ py: 1 }}>
                 <Box
@@ -382,6 +390,7 @@ const Navbar = () => {
                 </Box>
                 REGISTER
               </ListItem>
+              </Link>
             </Box>
           </List>
         </Toolbar>

@@ -55,6 +55,8 @@ export const MARRIAGE_PROPOSALS = [
   },
 ];
 
+
+
 export const FEATURED_MEMBERS = [
   {
     name: "Umer Farooq",
@@ -66,6 +68,7 @@ export const FEATURED_MEMBERS = [
     location: "Islamabad, Pakistan",
     image_url:
       "https://images.unsplash.com/photo-1530882548122-0596ee66cdfd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww",
+    about: "Umer Farooq is an unmarried 31-year-old male professional in the field of Accounts/Finance. He resides in Islamabad, Pakistan."
   },
   {
     name: "Khan",
@@ -77,6 +80,7 @@ export const FEATURED_MEMBERS = [
     location: "Others, Ireland",
     image_url:
       "https://wedding-wonders.bugfinder.net/assets/uploads/users/6354d561748c41666504033.jpg",
+    about: "Khan is an unmarried 31-year-old male involved in the business sector. He resides in Others, Ireland."
   },
   {
     name: "Salena",
@@ -88,6 +92,7 @@ export const FEATURED_MEMBERS = [
     location: "Others, United States Of America",
     image_url:
       "https://wedding-wonders.bugfinder.net/assets/uploads/users/6354feea2ea481666514666.jpg",
+    about: "Salena is a 35-year-old female who works as an Administrative Professional. She resides in Others, United States Of America."
   },
   {
     name: "Wasi",
@@ -99,6 +104,7 @@ export const FEATURED_MEMBERS = [
     location: "Bahawalpur, Pakistan",
     image_url:
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTkxfHxwcm9maWxlJTIwcGljdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
+    about: "Wasi is a married 30-year-old male involved in the business sector. He resides in Bahawalpur, Pakistan."
   },
   {
     name: "NewPerson1",
@@ -110,6 +116,7 @@ export const FEATURED_MEMBERS = [
     location: "Lahore, Pakistan",
     image_url:
       "https://wedding-wonders.bugfinder.net/assets/uploads/users/6363b2dbe5dd01667478235.jpg",
+    about: "NewPerson1 is a 28-year-old female Software Engineer. She resides in Lahore, Pakistan."
   },
   {
     name: "NewPerson2",
@@ -121,6 +128,7 @@ export const FEATURED_MEMBERS = [
     location: "Karachi, Pakistan",
     image_url:
       "https://plus.unsplash.com/premium_photo-1689977927774-401b12d137d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzN8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww",
+    about: "NewPerson2 is a married 35-year-old male Doctor. He resides in Karachi, Pakistan."
   },
   {
     name: "NewPerson3",
@@ -132,6 +140,7 @@ export const FEATURED_MEMBERS = [
     location: "Islamabad, Pakistan",
     image_url:
       "https://media.istockphoto.com/id/1399788030/photo/portrait-of-young-confident-indian-woman-pose-on-background.webp?b=1&s=170667a&w=0&k=20&c=8D_YP_bxKh8CH_W3n0kKr9bzQjZeYxUv9QgqfXjHNX8=",
+    about: "NewPerson3 is a 40-year-old female Teacher. She resides in Islamabad, Pakistan."
   },
   {
     name: "NewPerson4",
@@ -143,6 +152,7 @@ export const FEATURED_MEMBERS = [
     location: "Lahore, Pakistan",
     image_url:
       "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww",
+    about: "NewPerson4 is a married 33-year-old male Engineer. He resides in Lahore, Pakistan."
   },
   {
     name: "NewPerson5",
@@ -154,6 +164,7 @@ export const FEATURED_MEMBERS = [
     location: "Karachi, Pakistan",
     image_url:
       "https://wedding-wonders.bugfinder.net/assets/uploads/users/63578f656d0ce1666682725.jpg",
+    about: "NewPerson5 is a 29-year-old female Artist. She resides in Karachi, Pakistan."
   },
 ];
 

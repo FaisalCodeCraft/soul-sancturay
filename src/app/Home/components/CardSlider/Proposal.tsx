@@ -71,7 +71,6 @@ const Proposal = () => {
           slidesToScroll: 1,
           speed: 500,
           dots: true,
-
         },
       },
     ],
@@ -81,12 +80,17 @@ const Proposal = () => {
     <Box
       position={"relative"}
       bgcolor={COLOR.gray.light}
-      height={{md:"50vh",xs:"35vh"}}
+      height={{ md: "50vh", xs: "35vh" }}
       px={5}
       textAlign={"center"}
-      my={{xs:4}}
+      my={{ xs: 4 }}
     >
-      <Box position={"absolute"} width={{md:"300px"}} height={{md:"280px",xs:"150px"}} left={-80}>
+      <Box
+        position={"absolute"}
+        width={{ md: "300px" }}
+        height={{ md: "280px", xs: "150px" }}
+        left={-80}
+      >
         <Image
           fill
           style={{ opacity: 0.3, objectFit: "contain" }}
@@ -96,13 +100,13 @@ const Proposal = () => {
       </Box>
       <Slider {...settings}>
         {MARRIAGE_PROPOSALS.map((category, i) => (
-          <Box key={i} mt={{md:5,sm:3,xs:1}} p={{md:2}}>
+          <Box key={i} mt={{ md: 5, sm: 3, xs: 1 }} p={{ md: 2 }}>
             <Typography
               sx={{
                 fontWeight: "lighter",
                 fontFamily: "monospace",
                 color: "red",
-                marginBottom: {md:"15px"},
+                marginBottom: { md: "15px" },
               }}
             >
               {category?.title}
@@ -118,8 +122,8 @@ const Proposal = () => {
               {MARRIAGE_PROPOSALS[i].BY_CATEGORY?.map((item, i) => (
                 <Typography
                   sx={{
-                    cursor:"pointer",
-                    mb: {md:1},
+                    cursor: "pointer",
+                    mb: 1,
                     ":last-child": {
                       borderRight: "none",
                     },
@@ -128,6 +132,7 @@ const Proposal = () => {
                       textDecoration: "underline",
                     },
                     color: COLOR.gray.dark,
+                    px: 0.5,
                   }}
                   key={i}
                 >
@@ -156,7 +161,7 @@ const Proposal = () => {
             </Box>
           </Box>
         ))}
-        <Box mt={{md:5}} p={2}>
+        <Box mt={{ md: 5 }} p={2}>
           <Typography
             sx={{
               fontWeight: "lighter",
@@ -182,7 +187,7 @@ const Proposal = () => {
             />
           </Typography>
         </Box>
-        <Box mt={{md:5}} p={2}>
+        <Box mt={{ md: 5 }} p={2}>
           <Typography
             sx={{
               fontWeight: "lighter",
