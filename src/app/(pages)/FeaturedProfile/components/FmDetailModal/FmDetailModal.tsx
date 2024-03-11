@@ -14,7 +14,7 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   height: "85%",
-  width: {md:"80%",xs:"90%"},
+  width: { md: "80%", xs: "90%" },
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
@@ -59,13 +59,12 @@ const FmDetailModal = (props: any) => {
               flexDirection={"column"}
               alignItems={"center"}
               justifyContent={"center"}
-           
             >
               <Box
                 width={{ md: 160, sm: 130, xs: 100 }}
                 height={{ md: 160, sm: 130, xs: 100 }}
                 position={"relative"}
-                top={ {md:50}}
+                top={{ md: 50 }}
               >
                 <Image
                   fill
@@ -81,9 +80,9 @@ const FmDetailModal = (props: any) => {
               </Box>
               <Box
                 width={"100%"}
-                height={{md:140,sm:120,xs:70}}
+                height={{ md: 140, sm: 120, xs: 70 }}
                 position={"absolute"}
-                display={{md:"block",xs:"none"}}
+                display={{ md: "block", xs: "none" }}
                 top={0}
                 zIndex={-1}
               >
@@ -96,28 +95,25 @@ const FmDetailModal = (props: any) => {
                   alt={featuredMember?.name}
                 />
               </Box>
-              <Box  mt={{ md: 7,xs:4 }}>
-                <Typography
-                  fontSize={"1.2rem"}
-                  fontWeight={"bold"}
-                  mt={2}
-                 
-                >
-                  {featuredMember?.name}
-                </Typography>
-                <Typography mt={1}>
-                  <span style={{ fontWeight: "bold", color: COLOR.gray.dark }}>
-                    Age:{" "}
-                  </span>
-                  {featuredMember?.age}
-                </Typography>
-                <Typography>
-                  <span style={{ fontWeight: "bold", color: COLOR.gray.dark }}>
-                    Gender:{" "}
-                  </span>{" "}
-                  {featuredMember?.gender}
-                </Typography>
-              </Box>
+              <Typography
+                fontSize={"1.2rem"}
+                fontWeight={"bold"}
+                mt={{ md: 7 }}
+              >
+                {featuredMember?.name}
+              </Typography>
+              <Typography mt={1}>
+                <span style={{ fontWeight: "bold", color: COLOR.gray.dark }}>
+                  Age:{" "}
+                </span>
+                {featuredMember?.age}
+              </Typography>
+              <Typography>
+                <span style={{ fontWeight: "bold", color: COLOR.gray.dark }}>
+                  Gender:{" "}
+                </span>{" "}
+                {featuredMember?.gender}
+              </Typography>
             </Box>
             <Grid container pt={2} px={{ md: 3 }} columnSpacing={4}>
               <Grid item md={7} xs={12}>
