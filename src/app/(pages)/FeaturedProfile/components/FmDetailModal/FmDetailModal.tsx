@@ -14,7 +14,7 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   height: "85%",
-  width: "80%",
+  width: {md:"80%",xs:"90%"},
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
@@ -59,8 +59,14 @@ const FmDetailModal = (props: any) => {
               flexDirection={"column"}
               alignItems={"center"}
               justifyContent={"center"}
+           
             >
-              <Box width={160} height={160} position={"relative"} top={50}>
+              <Box
+                width={{ md: 160, sm: 130, xs: 90 }}
+                height={{ md: 160, sm: 130, xs: 90 }}
+                position={"relative"}
+                top={{ md: 50, sm: 80, xs: 120 }}
+              >
                 <Image
                   fill
                   style={{
@@ -75,7 +81,7 @@ const FmDetailModal = (props: any) => {
               </Box>
               <Box
                 width={"100%"}
-                height={140}
+                height={{md:140,sm:120,xs:70}}
                 position={"absolute"}
                 top={0}
                 zIndex={-1}
@@ -89,32 +95,36 @@ const FmDetailModal = (props: any) => {
                   alt={featuredMember?.name}
                 />
               </Box>
-              <Typography
-                fontSize={"1.2rem"}
-                fontWeight={"bold"}
-                mt={{ md: 7 }}
-              >
-                {featuredMember?.name}
-              </Typography>
-              <Typography mt={1}>
-                <span style={{ fontWeight: "bold", color: COLOR.gray.dark }}>
-                  Age:{" "}
-                </span>
-                {featuredMember?.age}
-              </Typography>
-              <Typography>
-                <span style={{ fontWeight: "bold", color: COLOR.gray.dark }}>
-                  Gender:{" "}
-                </span>{" "}
-                {featuredMember?.gender}
-              </Typography>
+              <Box  mt={{ md: 7,xs:15 }}>
+                <Typography
+                  fontSize={"1.2rem"}
+                  fontWeight={"bold"}
+                  mt={2}
+                 
+                >
+                  {featuredMember?.name}
+                </Typography>
+                <Typography mt={1}>
+                  <span style={{ fontWeight: "bold", color: COLOR.gray.dark }}>
+                    Age:{" "}
+                  </span>
+                  {featuredMember?.age}
+                </Typography>
+                <Typography>
+                  <span style={{ fontWeight: "bold", color: COLOR.gray.dark }}>
+                    Gender:{" "}
+                  </span>{" "}
+                  {featuredMember?.gender}
+                </Typography>
+              </Box>
             </Box>
-            <Grid container  pt={2} px={{md:3}} spacing={4}>
+            <Grid container pt={2} px={{ md: 3 }} columnSpacing={4}>
               <Grid item md={7} xs={12}>
-              <Typography fontSize={"1.3rem"} fontWeight={"bold"} pb={1}>Personal Info:</Typography>
+                <Typography fontSize={"1.3rem"} fontWeight={"bold"} pb={1}>
+                  Personal Info:
+                </Typography>
 
                 <Box pb={2} width={{ md: "80%" }}>
-
                   <Typography>
                     <span
                       style={{ fontWeight: "bold", color: COLOR.gray.dark }}
@@ -142,7 +152,9 @@ const FmDetailModal = (props: any) => {
                 </Box>
               </Grid>
               <Grid item md={5} xs={12}>
-                <Typography fontSize={"1.3rem"} fontWeight={"bold"} pb={1}>Description</Typography>
+                <Typography fontSize={"1.3rem"} fontWeight={"bold"} pb={1}>
+                  Description
+                </Typography>
                 <Typography fontSize={"15px"}>
                   {featuredMember?.about}
                 </Typography>
