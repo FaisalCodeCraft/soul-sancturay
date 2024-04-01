@@ -21,7 +21,7 @@ const SingleStory = ({ params }: any) => {
         <Container maxWidth="md">
           {STORIES.map((story, i) => (
             <Box key={i}>
-              {story?.id == params.id && (
+              {story?.id == params.id  && (
                 <Box>
                   <Typography
                     textAlign={"center"}

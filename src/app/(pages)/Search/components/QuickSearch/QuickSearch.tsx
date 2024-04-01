@@ -5,7 +5,10 @@ import React from "react";
 
 type Props = {};
 
-const QuickSearch = (props: Props) => {
+const QuickSearch = (props: any) => {
+  const handleSearch = () => {
+    console.log("search")
+  };
   return (
     <Box color={"white"} my={{ md: 8, sm: 4, xs: 2 }}>
       <Container maxWidth="md">
@@ -49,6 +52,7 @@ const QuickSearch = (props: Props) => {
               }}
             />
             <Button
+              // onClick={handleSearch}
               sx={{
                 bgcolor: "black",
                 borderRadius: "0px 4px 4px 0px",

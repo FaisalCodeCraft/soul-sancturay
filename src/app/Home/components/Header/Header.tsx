@@ -37,13 +37,13 @@ const Header = () => {
               fontSize={{ md: "1.2rem",xs:".9rem" }}
               lineHeight={{md:"25px", xs: "20px" }}
             >
-              {` Finding your perfect soul mate is like discovering the missing
+               Finding your perfect soul mate is like discovering the missing
               piece to your puzzle of life. It's about connecting with someone
               who understands you deeply, shares your values, and brings out the
               best in you. Your soul mate is the person who complements you in
               every way, making you feel whole and cherished. Together, you
               navigate life's joys and challenges hand in hand, creating a bond
-              that withstands the test of time.`}
+              that withstands the test of time.
             </Typography>
           </Box>
         </Grid>
@@ -174,7 +174,6 @@ const Header = () => {
             <FormControl
               sx={{
                 display: "flex",
-                flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "center",
                 color: "white",
